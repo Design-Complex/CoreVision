@@ -1,0 +1,23 @@
+<!--
+	cvshaderprogram.dtd
+	
+	CoreVision Shader Program DTD Version 0.1
+	
+	(description)
+	
+	Created: (date)
+	
+	Contact: Rob Dotson <robert.dotson@nyu.edu>
+	
+	(license)
+-->
+
+<!-- PARAMETER ENTITIES -->
+
+<!-- MAIN ELEMENTS -->
+
+<!ELEMENT shaderprogram children>
+
+<!-- BASIC ELEMENTS -->
+
+<!-- PARAMETER ENTITIES -->

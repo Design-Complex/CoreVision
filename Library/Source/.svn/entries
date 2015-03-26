@@ -1,0 +1,55 @@
+10
+
+dir
+5
+svn+ssh://corevision.cns.nyu.edu/Groups/CoreVision/Projects/CoreVision/SVN/CoreVision/Library/Source
+svn+ssh://corevision.cns.nyu.edu/Groups/CoreVision/Projects/CoreVision/SVN
+
+
+
+2010-02-11T21:48:04.712820Z
+1
+rob
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6a32975c-a4be-4cae-b9d2-c1cddff09ad0
+
+Test
+dir
+
+Graphics
+dir
+
+Plugins
+dir
+
+Analysis
+dir
+
+Application
+dir
+
+ADT
+dir
+
+Math
+dir
+
+Base
+dir
+
+Document
+dir
+

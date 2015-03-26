@@ -1,0 +1,6 @@
+//
+// Prefix header for all source files of the 'CoreVision' target in the 'CoreVision' project.
+//
+
+
+#include <iostream>

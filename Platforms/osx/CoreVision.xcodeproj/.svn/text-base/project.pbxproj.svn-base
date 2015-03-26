@@ -1,0 +1,1830 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D419BB161068221200742B9B /* Documentation */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D419BB191068223100742B9B /* Build configuration list for PBXAggregateTarget "Documentation" */;
+			buildPhases = (
+				D419BB151068221200742B9B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Documentation;
+			productName = Docset;
+		};
+		D4AF9B2D1063033A00803716 /* All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D4AF9B371063037C00803716 /* Build configuration list for PBXAggregateTarget "All" */;
+			buildPhases = (
+			);
+			dependencies = (
+				D4AF9B711063041300803716 /* PBXTargetDependency */,
+				D4AF9B6F1063040800803716 /* PBXTargetDependency */,
+			);
+			name = All;
+			productName = All;
+		};
+		D4AF9B321063035800803716 /* Tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D4AF9B381063037C00803716 /* Build configuration list for PBXAggregateTarget "Tests" */;
+			buildPhases = (
+			);
+			dependencies = (
+				D4A2AB5C10A132460010FA7C /* PBXTargetDependency */,
+				D4498B90109FA02E00A98A51 /* PBXTargetDependency */,
+				D44989E0109F92DC00A98A51 /* PBXTargetDependency */,
+				D4EE11AD107AF52200348130 /* PBXTargetDependency */,
+				D4AF9B6D106303FD00803716 /* PBXTargetDependency */,
+				D4AF9B6B106303FD00803716 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Test;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		50149BDA09E781A5002DEE6A /* CoreVision.h in Headers */ = {isa = PBXBuildFile; fileRef = 50149BD909E781A5002DEE6A /* CoreVision.h */; };
+		D40E01C110862AFF00FCFF7B /* CVNamed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D40E01BD10862AFF00FCFF7B /* CVNamed.cpp */; };
+		D40E01C210862AFF00FCFF7B /* CVNamed.h in Headers */ = {isa = PBXBuildFile; fileRef = D40E01BE10862AFF00FCFF7B /* CVNamed.h */; };
+		D40E01C310862AFF00FCFF7B /* CVUnique.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D40E01BF10862AFF00FCFF7B /* CVUnique.cpp */; };
+		D40E01C410862AFF00FCFF7B /* CVUnique.h in Headers */ = {isa = PBXBuildFile; fileRef = D40E01C010862AFF00FCFF7B /* CVUnique.h */; };
+		D40E01EA108630C500FCFF7B /* CVFragmentShader.h in Headers */ = {isa = PBXBuildFile; fileRef = D40E01E8108630C500FCFF7B /* CVFragmentShader.h */; };
+		D40E01EB108630C500FCFF7B /* CVFragmentShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D40E01E9108630C500FCFF7B /* CVFragmentShader.cpp */; };
+		D40E01EE108630CF00FCFF7B /* CVVertexShader.h in Headers */ = {isa = PBXBuildFile; fileRef = D40E01EC108630CF00FCFF7B /* CVVertexShader.h */; };
+		D40E01EF108630CF00FCFF7B /* CVVertexShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D40E01ED108630CF00FCFF7B /* CVVertexShader.cpp */; };
+		D40E01F2108630DA00FCFF7B /* CVGeometryShader.h in Headers */ = {isa = PBXBuildFile; fileRef = D40E01F0108630DA00FCFF7B /* CVGeometryShader.h */; };
+		D40E01F3108630DA00FCFF7B /* CVGeometryShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D40E01F1108630DA00FCFF7B /* CVGeometryShader.cpp */; };
+		D410D891107AF3A600428495 /* CVADT.h in Headers */ = {isa = PBXBuildFile; fileRef = D410D890107AF3A600428495 /* CVADT.h */; };
+		D4359D0810A8B75800017BD0 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4498B7B109F9FB800A98A51 /* ApplicationServices.framework */; };
+		D44989DB109F92C100A98A51 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44989DA109F92C100A98A51 /* OpenGL.framework */; };
+		D44989DC109F92C700A98A51 /* libCoreVision.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC09D05546B4700DB518D /* libCoreVision.dylib */; };
+		D44989E8109F931900A98A51 /* CVShaderTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D44989BE109F923600A98A51 /* CVShaderTest.cpp */; };
+		D4498B79109F9FA100A98A51 /* libCoreVision.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC09D05546B4700DB518D /* libCoreVision.dylib */; };
+		D4498B7A109F9FB000A98A51 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44989DA109F92C100A98A51 /* OpenGL.framework */; };
+		D4498B7C109F9FB800A98A51 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4498B7B109F9FB800A98A51 /* ApplicationServices.framework */; };
+		D4498B7E109F9FD700A98A51 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF9B4D106303D800803716 /* gtest.framework */; };
+		D4498B82109F9FE500A98A51 /* CVDisplayTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D44989C2109F924D00A98A51 /* CVDisplayTest.cpp */; };
+		D453218B109B8BCF003E73F9 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D453218A109B8BCF003E73F9 /* OpenGL.framework */; };
+		D4532197109B8D5E003E73F9 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4532196109B8D5E003E73F9 /* ApplicationServices.framework */; };
+		D45321B2109B942A003E73F9 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45321B1109B942A003E73F9 /* CoreVideo.framework */; };
+		D473D61A107BA77E0026E137 /* CVThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D473D616107BA77E0026E137 /* CVThread.cpp */; };
+		D473D61B107BA77E0026E137 /* CVThread.h in Headers */ = {isa = PBXBuildFile; fileRef = D473D617107BA77E0026E137 /* CVThread.h */; };
+		D473D61C107BA77E0026E137 /* CVThreadManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D473D618107BA77E0026E137 /* CVThreadManager.cpp */; };
+		D473D61D107BA77E0026E137 /* CVThreadManager.h in Headers */ = {isa = PBXBuildFile; fileRef = D473D619107BA77E0026E137 /* CVThreadManager.h */; };
+		D473D629107BA7BD0026E137 /* CVDocument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D473D621107BA7BD0026E137 /* CVDocument.cpp */; };
+		D473D62A107BA7BD0026E137 /* CVDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D473D622107BA7BD0026E137 /* CVDocument.h */; };
+		D473D62C107BA7BD0026E137 /* CVShaderDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D473D624107BA7BD0026E137 /* CVShaderDocument.h */; };
+		D473D62D107BA7BD0026E137 /* CVXMLDocument.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D473D625107BA7BD0026E137 /* CVXMLDocument.cpp */; };
+		D473D62E107BA7BD0026E137 /* CVXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = D473D626107BA7BD0026E137 /* CVXMLDocument.h */; };
+		D473D62F107BA7BD0026E137 /* CVXMLObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D473D627107BA7BD0026E137 /* CVXMLObject.cpp */; };
+		D473D630107BA7BD0026E137 /* CVXMLObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D473D628107BA7BD0026E137 /* CVXMLObject.h */; };
+		D473D632107BA8270026E137 /* CVApp.h in Headers */ = {isa = PBXBuildFile; fileRef = D473D631107BA8270026E137 /* CVApp.h */; };
+		D473D63D107BB10D0026E137 /* CVRunnable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D473D63B107BB10D0026E137 /* CVRunnable.cpp */; };
+		D473D63E107BB10D0026E137 /* CVRunnable.h in Headers */ = {isa = PBXBuildFile; fileRef = D473D63C107BB10D0026E137 /* CVRunnable.h */; };
+		D49957EE1113966400725BD3 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D49957ED1113966400725BD3 /* Accelerate.framework */; };
+		D4A04AC1107CF62B00813D17 /* CVDeque.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04AB7107CF62B00813D17 /* CVDeque.cpp */; };
+		D4A04AC2107CF62B00813D17 /* CVDeque.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04AB8107CF62B00813D17 /* CVDeque.h */; };
+		D4A04AC3107CF62B00813D17 /* CVListNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04AB9107CF62B00813D17 /* CVListNode.cpp */; };
+		D4A04AC4107CF62B00813D17 /* CVListNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04ABA107CF62B00813D17 /* CVListNode.h */; };
+		D4A04AC5107CF62B00813D17 /* CVNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04ABB107CF62B00813D17 /* CVNode.cpp */; };
+		D4A04AC6107CF62B00813D17 /* CVNode.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04ABC107CF62B00813D17 /* CVNode.h */; };
+		D4A04AC7107CF62B00813D17 /* CVQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04ABD107CF62B00813D17 /* CVQueue.cpp */; };
+		D4A04AC8107CF62B00813D17 /* CVQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04ABE107CF62B00813D17 /* CVQueue.h */; };
+		D4A04AC9107CF62B00813D17 /* CVStack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04ABF107CF62B00813D17 /* CVStack.cpp */; };
+		D4A04ACA107CF62B00813D17 /* CVStack.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04AC0107CF62B00813D17 /* CVStack.h */; };
+		D4A04B83107E56C100813D17 /* CVClock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04B81107E56C100813D17 /* CVClock.cpp */; };
+		D4A04B84107E56C100813D17 /* CVClock.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04B82107E56C100813D17 /* CVClock.h */; };
+		D4A04BE4107E5BDD00813D17 /* CVCamera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BB2107E5BD500813D17 /* CVCamera.cpp */; };
+		D4A04BE5107E5BDD00813D17 /* CVCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BB3107E5BD500813D17 /* CVCamera.h */; };
+		D4A04BE6107E5BDD00813D17 /* CVDisplay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BB4107E5BD500813D17 /* CVDisplay.cpp */; };
+		D4A04BE7107E5BDD00813D17 /* CVDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BB5107E5BD600813D17 /* CVDisplay.h */; };
+		D4A04BE8107E5BDD00813D17 /* CVDisplayContext.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BB6107E5BD600813D17 /* CVDisplayContext.cpp */; };
+		D4A04BE9107E5BDD00813D17 /* CVDisplayContext.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BB7107E5BD600813D17 /* CVDisplayContext.h */; };
+		D4A04BEA107E5BDD00813D17 /* CVDisplayController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BB8107E5BD600813D17 /* CVDisplayController.cpp */; };
+		D4A04BEB107E5BDD00813D17 /* CVDisplayController.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BB9107E5BD600813D17 /* CVDisplayController.h */; };
+		D4A04BEC107E5BDD00813D17 /* CVDisplayMode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BBA107E5BD600813D17 /* CVDisplayMode.cpp */; };
+		D4A04BED107E5BDD00813D17 /* CVDisplayMode.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BBB107E5BD700813D17 /* CVDisplayMode.h */; };
+		D4A04BEE107E5BDD00813D17 /* CVDisplayThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BBC107E5BD700813D17 /* CVDisplayThread.cpp */; };
+		D4A04BEF107E5BDD00813D17 /* CVDisplayThread.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BBD107E5BD700813D17 /* CVDisplayThread.h */; };
+		D4A04BF0107E5BDD00813D17 /* CVGammaTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BBE107E5BD700813D17 /* CVGammaTable.cpp */; };
+		D4A04BF1107E5BDD00813D17 /* CVGammaTable.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BBF107E5BD700813D17 /* CVGammaTable.h */; };
+		D4A04BF2107E5BDD00813D17 /* CVGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BC0107E5BD700813D17 /* CVGraphics.h */; };
+		D4A04BF3107E5BDD00813D17 /* CVGraphicsController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BC1107E5BD800813D17 /* CVGraphicsController.cpp */; };
+		D4A04BF4107E5BDD00813D17 /* CVGraphicsController.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BC2107E5BD800813D17 /* CVGraphicsController.h */; };
+		D4A04BF5107E5BDD00813D17 /* CVGraphicsDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BC3107E5BD800813D17 /* CVGraphicsDefines.h */; };
+		D4A04BF6107E5BDD00813D17 /* CVGraphicsException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BC4107E5BD800813D17 /* CVGraphicsException.cpp */; };
+		D4A04BF7107E5BDD00813D17 /* CVGraphicsException.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BC5107E5BD800813D17 /* CVGraphicsException.h */; };
+		D4A04BF8107E5BDD00813D17 /* CVGraphicsIncludes.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BC6107E5BD800813D17 /* CVGraphicsIncludes.h */; };
+		D4A04BF9107E5BDD00813D17 /* CVGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BC8107E5BD900813D17 /* CVGrid.cpp */; };
+		D4A04BFA107E5BDD00813D17 /* CVGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BC9107E5BD900813D17 /* CVGrid.h */; };
+		D4A04BFB107E5BDD00813D17 /* CVPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BCA107E5BD900813D17 /* CVPolygon.cpp */; };
+		D4A04BFC107E5BDD00813D17 /* CVPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BCB107E5BD900813D17 /* CVPolygon.h */; };
+		D4A04BFD107E5BDD00813D17 /* CVPrimitive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BCC107E5BD900813D17 /* CVPrimitive.cpp */; };
+		D4A04BFE107E5BDD00813D17 /* CVPrimitive.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BCD107E5BD900813D17 /* CVPrimitive.h */; };
+		D4A04BFF107E5BDD00813D17 /* CVPrimitives.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BCE107E5BDA00813D17 /* CVPrimitives.h */; };
+		D4A04C00107E5BDD00813D17 /* CVRegularPolygon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BCF107E5BDA00813D17 /* CVRegularPolygon.cpp */; };
+		D4A04C01107E5BDD00813D17 /* CVRegularPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BD0107E5BDA00813D17 /* CVRegularPolygon.h */; };
+		D4A04C02107E5BDD00813D17 /* CVSurfaceMesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BD1107E5BDA00813D17 /* CVSurfaceMesh.cpp */; };
+		D4A04C03107E5BDD00813D17 /* CVSurfaceMesh.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BD2107E5BDA00813D17 /* CVSurfaceMesh.h */; };
+		D4A04C04107E5BDD00813D17 /* CVColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BD4107E5BDB00813D17 /* CVColor.cpp */; };
+		D4A04C05107E5BDD00813D17 /* CVColor.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BD5107E5BDB00813D17 /* CVColor.h */; };
+		D4A04C06107E5BDD00813D17 /* CVMaterial.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BD6107E5BDB00813D17 /* CVMaterial.cpp */; };
+		D4A04C07107E5BDD00813D17 /* CVMaterial.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BD7107E5BDB00813D17 /* CVMaterial.h */; };
+		D4A04C08107E5BDD00813D17 /* CVProperties.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BD8107E5BDB00813D17 /* CVProperties.h */; };
+		D4A04C09107E5BDD00813D17 /* CVTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BD9107E5BDB00813D17 /* CVTexture.cpp */; };
+		D4A04C0A107E5BDD00813D17 /* CVTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BDA107E5BDC00813D17 /* CVTexture.h */; };
+		D4A04C0B107E5BDD00813D17 /* CVTransformer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BDB107E5BDC00813D17 /* CVTransformer.cpp */; };
+		D4A04C0C107E5BDD00813D17 /* CVTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BDC107E5BDC00813D17 /* CVTransformer.h */; };
+		D4A04C0D107E5BDD00813D17 /* CVShader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BDE107E5BDC00813D17 /* CVShader.cpp */; };
+		D4A04C0E107E5BDD00813D17 /* CVShader.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BE0107E5BDC00813D17 /* CVShader.h */; };
+		D4A04C0F107E5BDD00813D17 /* CVShaderProgram.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04BE1107E5BDC00813D17 /* CVShaderProgram.cpp */; };
+		D4A04C10107E5BDD00813D17 /* CVShaderProgram.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BE2107E5BDD00813D17 /* CVShaderProgram.h */; };
+		D4A04C11107E5BDD00813D17 /* CVShaders.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04BE3107E5BDD00813D17 /* CVShaders.h */; };
+		D4A04C25107E5C6400813D17 /* CVMath.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C12107E5C6000813D17 /* CVMath.h */; };
+		D4A04C26107E5C6400813D17 /* CVMathDefines.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C13107E5C6000813D17 /* CVMathDefines.cpp */; };
+		D4A04C27107E5C6400813D17 /* CVMathDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C14107E5C6100813D17 /* CVMathDefines.h */; };
+		D4A04C28107E5C6400813D17 /* CVMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C15107E5C6100813D17 /* CVMatrix.cpp */; };
+		D4A04C29107E5C6400813D17 /* CVMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C16107E5C6100813D17 /* CVMatrix.h */; };
+		D4A04C2A107E5C6400813D17 /* CVMatrix2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C17107E5C6100813D17 /* CVMatrix2.cpp */; };
+		D4A04C2B107E5C6400813D17 /* CVMatrix2.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C18107E5C6100813D17 /* CVMatrix2.h */; };
+		D4A04C2C107E5C6400813D17 /* CVMatrix3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C19107E5C6200813D17 /* CVMatrix3.cpp */; };
+		D4A04C2D107E5C6400813D17 /* CVMatrix3.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C1A107E5C6200813D17 /* CVMatrix3.h */; };
+		D4A04C2E107E5C6400813D17 /* CVMatrix4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C1B107E5C6200813D17 /* CVMatrix4.cpp */; };
+		D4A04C2F107E5C6400813D17 /* CVMatrix4.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C1C107E5C6200813D17 /* CVMatrix4.h */; };
+		D4A04C30107E5C6400813D17 /* CVVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C1D107E5C6200813D17 /* CVVector.cpp */; };
+		D4A04C31107E5C6400813D17 /* CVVector.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C1E107E5C6300813D17 /* CVVector.h */; };
+		D4A04C32107E5C6400813D17 /* CVVector2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C1F107E5C6300813D17 /* CVVector2.cpp */; };
+		D4A04C33107E5C6400813D17 /* CVVector2.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C20107E5C6300813D17 /* CVVector2.h */; };
+		D4A04C34107E5C6400813D17 /* CVVector3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C21107E5C6300813D17 /* CVVector3.cpp */; };
+		D4A04C35107E5C6400813D17 /* CVVector3.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C22107E5C6400813D17 /* CVVector3.h */; };
+		D4A04C36107E5C6400813D17 /* CVVector4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4A04C23107E5C6400813D17 /* CVVector4.cpp */; };
+		D4A04C37107E5C6400813D17 /* CVVector4.h in Headers */ = {isa = PBXBuildFile; fileRef = D4A04C24107E5C6400813D17 /* CVVector4.h */; };
+		D4A2AB5810A1321B0010FA7C /* libCoreVision.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC09D05546B4700DB518D /* libCoreVision.dylib */; };
+		D4A2AB5910A1322F0010FA7C /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44989DA109F92C100A98A51 /* OpenGL.framework */; };
+		D4A2AB5A10A1323D0010FA7C /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF9B4D106303D800803716 /* gtest.framework */; };
+		D4A2AB5F10A132610010FA7C /* CVGraphicsControllerTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D44989C3109F924D00A98A51 /* CVGraphicsControllerTest.cpp */; };
+		D4AF9A5C1062D69C00803716 /* CVRTTI.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AF9A5A1062D69C00803716 /* CVRTTI.h */; };
+		D4AF9A5D1062D69C00803716 /* CVRTTI.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4AF9A5B1062D69C00803716 /* CVRTTI.cpp */; };
+		D4AF9A601062D90B00803716 /* CVBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AF9A5E1062D90B00803716 /* CVBase.h */; };
+		D4AF9A731062D9AB00803716 /* CVObject.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AF9A711062D9AB00803716 /* CVObject.h */; };
+		D4AF9A741062D9AB00803716 /* CVObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4AF9A721062D9AB00803716 /* CVObject.cpp */; };
+		D4AF9A771062DF3000803716 /* CVString.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AF9A751062DF3000803716 /* CVString.h */; };
+		D4AF9A781062DF3000803716 /* CVString.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4AF9A761062DF3000803716 /* CVString.cpp */; };
+		D4AF9A8A1062F38000803716 /* CVDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = D4AF9A881062F38000803716 /* CVDefines.h */; };
+		D4AF9AF9106300D800803716 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF9AF8106300D800803716 /* CoreFoundation.framework */; };
+		D4AF9B40106303A400803716 /* libCoreVision.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC09D05546B4700DB518D /* libCoreVision.dylib */; };
+		D4AF9B4C106303C300803716 /* libCoreVision.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC09D05546B4700DB518D /* libCoreVision.dylib */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D4AF9B4E106303D800803716 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF9B4D106303D800803716 /* gtest.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		D4AF9B69106303EE00803716 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF9B4D106303D800803716 /* gtest.framework */; };
+		D4AF9B731063042D00803716 /* CVStringTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4AF9B721063042D00803716 /* CVStringTest.cpp */; };
+		D4AF9B751063043A00803716 /* CVRTTITest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4AF9B741063043A00803716 /* CVRTTITest.cpp */; };
+		D4C9B91C106D6E1C0057EF1D /* CVSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C9B91A106D6E1C0057EF1D /* CVSingleton.h */; };
+		D4C9B920106D712C0057EF1D /* CVLockable.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C9B91E106D712C0057EF1D /* CVLockable.h */; };
+		D4C9B921106D712C0057EF1D /* CVLockable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4C9B91F106D712C0057EF1D /* CVLockable.cpp */; };
+		D4C9B926106D73220057EF1D /* CVMutex.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C9B924106D73220057EF1D /* CVMutex.h */; };
+		D4C9B927106D73220057EF1D /* CVMutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4C9B925106D73220057EF1D /* CVMutex.cpp */; };
+		D4C9B92A106D73280057EF1D /* CVLock.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C9B928106D73280057EF1D /* CVLock.h */; };
+		D4C9B952106D75FD0057EF1D /* CVGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C9B950106D75FD0057EF1D /* CVGuard.h */; };
+		D4C9B953106D75FD0057EF1D /* CVGuard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4C9B951106D75FD0057EF1D /* CVGuard.cpp */; };
+		D4C9B960106D7B280057EF1D /* CVApplication.h in Headers */ = {isa = PBXBuildFile; fileRef = D4C9B95E106D7B280057EF1D /* CVApplication.h */; };
+		D4C9B961106D7B280057EF1D /* CVApplication.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4C9B95F106D7B280057EF1D /* CVApplication.cpp */; };
+		D4EE11A8107AF50800348130 /* libCoreVision.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D2AAC09D05546B4700DB518D /* libCoreVision.dylib */; };
+		D4EE11A9107AF51700348130 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF9B4D106303D800803716 /* gtest.framework */; };
+		D4EE11C2107BA27900348130 /* CVException.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4EE11C0107BA27900348130 /* CVException.cpp */; };
+		D4EE11C3107BA27900348130 /* CVException.h in Headers */ = {isa = PBXBuildFile; fileRef = D4EE11C1107BA27900348130 /* CVException.h */; };
+		D4EE11CA107BA2C200348130 /* CVTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = D4EE11C9107BA2C200348130 /* CVTypes.h */; };
+		D4EE11D3107BA33E00348130 /* CVADTTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D410D88E107AF36500428495 /* CVADTTest.cpp */; };
+		D4F395141124A21700F01165 /* CVRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = D4F395121124A21700F01165 /* CVRuntime.h */; };
+		D4F395151124A21700F01165 /* CVRuntime.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D4F395131124A21700F01165 /* CVRuntime.cpp */; };
+		D4FE6D0610D7EAF800FAFF56 /* gtest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4AF9B4D106303D800803716 /* gtest.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D44989D7109F929200A98A51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC09C05546B4700DB518D;
+			remoteInfo = CoreVision;
+		};
+		D44989DF109F92DC00A98A51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D44989D2109F928600A98A51;
+			remoteInfo = CVShaderTest;
+		};
+		D4498B77109F9F9C00A98A51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC09C05546B4700DB518D;
+			remoteInfo = CoreVision;
+		};
+		D4498B8F109FA02E00A98A51 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4498B72109F9F9400A98A51;
+			remoteInfo = CVDisplayTest;
+		};
+		D4A2AB5610A132150010FA7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC09C05546B4700DB518D;
+			remoteInfo = CoreVision;
+		};
+		D4A2AB5B10A132460010FA7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4A2AB4110A132100010FA7C;
+			remoteInfo = CVGraphicsControllerTest;
+		};
+		D4AF9B41106303A800803716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC09C05546B4700DB518D;
+			remoteInfo = CoreVision;
+		};
+		D4AF9B4A106303C000803716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC09C05546B4700DB518D;
+			remoteInfo = CoreVision;
+		};
+		D4AF9B6A106303FD00803716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4AF9B45106303BB00803716;
+			remoteInfo = CVRTTITest;
+		};
+		D4AF9B6C106303FD00803716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4AF9B3B1063039E00803716;
+			remoteInfo = CVStringTest;
+		};
+		D4AF9B6E1063040800803716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4AF9B321063035800803716;
+			remoteInfo = Tests;
+		};
+		D4AF9B701063041300803716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC09C05546B4700DB518D;
+			remoteInfo = CoreVision;
+		};
+		D4EE11AA107AF51C00348130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC09C05546B4700DB518D;
+			remoteInfo = CoreVision;
+		};
+		D4EE11AC107AF52200348130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4EE11A3107AF50200348130;
+			remoteInfo = CVADTTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50149BD909E781A5002DEE6A /* CoreVision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoreVision.h; path = ../CoreVision.h; sourceTree = "<group>"; };
+		5073E0C609E734A800EC74B6 /* CoreVisionProj.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = CoreVisionProj.xcconfig; sourceTree = "<group>"; };
+		5073E0C709E734A800EC74B6 /* CoreVisionTarget.xcconfig */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xcconfig; path = CoreVisionTarget.xcconfig; sourceTree = "<group>"; };
+		D2AAC09D05546B4700DB518D /* libCoreVision.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libCoreVision.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		D40E01BD10862AFF00FCFF7B /* CVNamed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVNamed.cpp; sourceTree = "<group>"; };
+		D40E01BE10862AFF00FCFF7B /* CVNamed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVNamed.h; sourceTree = "<group>"; };
+		D40E01BF10862AFF00FCFF7B /* CVUnique.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVUnique.cpp; sourceTree = "<group>"; };
+		D40E01C010862AFF00FCFF7B /* CVUnique.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVUnique.h; sourceTree = "<group>"; };
+		D40E01E8108630C500FCFF7B /* CVFragmentShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVFragmentShader.h; sourceTree = "<group>"; };
+		D40E01E9108630C500FCFF7B /* CVFragmentShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVFragmentShader.cpp; sourceTree = "<group>"; };
+		D40E01EC108630CF00FCFF7B /* CVVertexShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVVertexShader.h; sourceTree = "<group>"; };
+		D40E01ED108630CF00FCFF7B /* CVVertexShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVVertexShader.cpp; sourceTree = "<group>"; };
+		D40E01F0108630DA00FCFF7B /* CVGeometryShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGeometryShader.h; sourceTree = "<group>"; };
+		D40E01F1108630DA00FCFF7B /* CVGeometryShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVGeometryShader.cpp; sourceTree = "<group>"; };
+		D40E01FD108643C600FCFF7B /* cvshaderprogram.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = cvshaderprogram.dtd; sourceTree = "<group>"; };
+		D410D88E107AF36500428495 /* CVADTTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVADTTest.cpp; sourceTree = "<group>"; };
+		D410D890107AF3A600428495 /* CVADT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVADT.h; sourceTree = "<group>"; };
+		D419BAAC1067E23800742B9B /* doxygen.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = doxygen.config; sourceTree = "<group>"; };
+		D419BB121068207000742B9B /* Documentation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Documentation.plist; sourceTree = "<group>"; };
+		D419BB491068287500742B9B /* Documentation.config */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Documentation.config; sourceTree = "<group>"; };
+		D44989BE109F923600A98A51 /* CVShaderTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVShaderTest.cpp; sourceTree = "<group>"; };
+		D44989C1109F924D00A98A51 /* CVClockTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVClockTest.cpp; sourceTree = "<group>"; };
+		D44989C2109F924D00A98A51 /* CVDisplayTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVDisplayTest.cpp; sourceTree = "<group>"; };
+		D44989C3109F924D00A98A51 /* CVGraphicsControllerTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVGraphicsControllerTest.cpp; sourceTree = "<group>"; };
+		D44989C4109F924D00A98A51 /* CVMathTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVMathTest.cpp; sourceTree = "<group>"; };
+		D44989C5109F924D00A98A51 /* CVXMLTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVXMLTest.cpp; sourceTree = "<group>"; };
+		D44989D3109F928700A98A51 /* CVShaderTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CVShaderTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D44989DA109F92C100A98A51 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		D4498B73109F9F9400A98A51 /* CVDisplayTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CVDisplayTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4498B7B109F9FB800A98A51 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		D453218A109B8BCF003E73F9 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		D4532196109B8D5E003E73F9 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		D45321B1109B942A003E73F9 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		D473D616107BA77E0026E137 /* CVThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVThread.cpp; sourceTree = "<group>"; };
+		D473D617107BA77E0026E137 /* CVThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVThread.h; sourceTree = "<group>"; };
+		D473D618107BA77E0026E137 /* CVThreadManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVThreadManager.cpp; sourceTree = "<group>"; };
+		D473D619107BA77E0026E137 /* CVThreadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVThreadManager.h; sourceTree = "<group>"; };
+		D473D621107BA7BD0026E137 /* CVDocument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVDocument.cpp; sourceTree = "<group>"; };
+		D473D622107BA7BD0026E137 /* CVDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVDocument.h; sourceTree = "<group>"; };
+		D473D623107BA7BD0026E137 /* CVShaderDocument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVShaderDocument.cpp; sourceTree = "<group>"; };
+		D473D624107BA7BD0026E137 /* CVShaderDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVShaderDocument.h; sourceTree = "<group>"; };
+		D473D625107BA7BD0026E137 /* CVXMLDocument.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVXMLDocument.cpp; sourceTree = "<group>"; };
+		D473D626107BA7BD0026E137 /* CVXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVXMLDocument.h; sourceTree = "<group>"; };
+		D473D627107BA7BD0026E137 /* CVXMLObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVXMLObject.cpp; sourceTree = "<group>"; };
+		D473D628107BA7BD0026E137 /* CVXMLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVXMLObject.h; sourceTree = "<group>"; };
+		D473D631107BA8270026E137 /* CVApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVApp.h; sourceTree = "<group>"; };
+		D473D63B107BB10D0026E137 /* CVRunnable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVRunnable.cpp; sourceTree = "<group>"; };
+		D473D63C107BB10D0026E137 /* CVRunnable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVRunnable.h; sourceTree = "<group>"; };
+		D49957ED1113966400725BD3 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		D4A04AB7107CF62B00813D17 /* CVDeque.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVDeque.cpp; sourceTree = "<group>"; };
+		D4A04AB8107CF62B00813D17 /* CVDeque.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVDeque.h; sourceTree = "<group>"; };
+		D4A04AB9107CF62B00813D17 /* CVListNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVListNode.cpp; sourceTree = "<group>"; };
+		D4A04ABA107CF62B00813D17 /* CVListNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVListNode.h; sourceTree = "<group>"; };
+		D4A04ABB107CF62B00813D17 /* CVNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVNode.cpp; sourceTree = "<group>"; };
+		D4A04ABC107CF62B00813D17 /* CVNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVNode.h; sourceTree = "<group>"; };
+		D4A04ABD107CF62B00813D17 /* CVQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVQueue.cpp; sourceTree = "<group>"; };
+		D4A04ABE107CF62B00813D17 /* CVQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVQueue.h; sourceTree = "<group>"; };
+		D4A04ABF107CF62B00813D17 /* CVStack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVStack.cpp; sourceTree = "<group>"; };
+		D4A04AC0107CF62B00813D17 /* CVStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVStack.h; sourceTree = "<group>"; };
+		D4A04B81107E56C100813D17 /* CVClock.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVClock.cpp; sourceTree = "<group>"; };
+		D4A04B82107E56C100813D17 /* CVClock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVClock.h; sourceTree = "<group>"; };
+		D4A04BB2107E5BD500813D17 /* CVCamera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVCamera.cpp; sourceTree = "<group>"; };
+		D4A04BB3107E5BD500813D17 /* CVCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVCamera.h; sourceTree = "<group>"; };
+		D4A04BB4107E5BD500813D17 /* CVDisplay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVDisplay.cpp; sourceTree = "<group>"; };
+		D4A04BB5107E5BD600813D17 /* CVDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVDisplay.h; sourceTree = "<group>"; };
+		D4A04BB6107E5BD600813D17 /* CVDisplayContext.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVDisplayContext.cpp; sourceTree = "<group>"; };
+		D4A04BB7107E5BD600813D17 /* CVDisplayContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVDisplayContext.h; sourceTree = "<group>"; };
+		D4A04BB8107E5BD600813D17 /* CVDisplayController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVDisplayController.cpp; sourceTree = "<group>"; };
+		D4A04BB9107E5BD600813D17 /* CVDisplayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVDisplayController.h; sourceTree = "<group>"; };
+		D4A04BBA107E5BD600813D17 /* CVDisplayMode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVDisplayMode.cpp; sourceTree = "<group>"; };
+		D4A04BBB107E5BD700813D17 /* CVDisplayMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVDisplayMode.h; sourceTree = "<group>"; };
+		D4A04BBC107E5BD700813D17 /* CVDisplayThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVDisplayThread.cpp; sourceTree = "<group>"; };
+		D4A04BBD107E5BD700813D17 /* CVDisplayThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVDisplayThread.h; sourceTree = "<group>"; };
+		D4A04BBE107E5BD700813D17 /* CVGammaTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVGammaTable.cpp; sourceTree = "<group>"; };
+		D4A04BBF107E5BD700813D17 /* CVGammaTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGammaTable.h; sourceTree = "<group>"; };
+		D4A04BC0107E5BD700813D17 /* CVGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGraphics.h; sourceTree = "<group>"; };
+		D4A04BC1107E5BD800813D17 /* CVGraphicsController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVGraphicsController.cpp; sourceTree = "<group>"; };
+		D4A04BC2107E5BD800813D17 /* CVGraphicsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGraphicsController.h; sourceTree = "<group>"; };
+		D4A04BC3107E5BD800813D17 /* CVGraphicsDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGraphicsDefines.h; sourceTree = "<group>"; };
+		D4A04BC4107E5BD800813D17 /* CVGraphicsException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVGraphicsException.cpp; sourceTree = "<group>"; };
+		D4A04BC5107E5BD800813D17 /* CVGraphicsException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGraphicsException.h; sourceTree = "<group>"; };
+		D4A04BC6107E5BD800813D17 /* CVGraphicsIncludes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGraphicsIncludes.h; sourceTree = "<group>"; };
+		D4A04BC8107E5BD900813D17 /* CVGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVGrid.cpp; sourceTree = "<group>"; };
+		D4A04BC9107E5BD900813D17 /* CVGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGrid.h; sourceTree = "<group>"; };
+		D4A04BCA107E5BD900813D17 /* CVPolygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVPolygon.cpp; sourceTree = "<group>"; };
+		D4A04BCB107E5BD900813D17 /* CVPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPolygon.h; sourceTree = "<group>"; };
+		D4A04BCC107E5BD900813D17 /* CVPrimitive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVPrimitive.cpp; sourceTree = "<group>"; };
+		D4A04BCD107E5BD900813D17 /* CVPrimitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPrimitive.h; sourceTree = "<group>"; };
+		D4A04BCE107E5BDA00813D17 /* CVPrimitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVPrimitives.h; sourceTree = "<group>"; };
+		D4A04BCF107E5BDA00813D17 /* CVRegularPolygon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVRegularPolygon.cpp; sourceTree = "<group>"; };
+		D4A04BD0107E5BDA00813D17 /* CVRegularPolygon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVRegularPolygon.h; sourceTree = "<group>"; };
+		D4A04BD1107E5BDA00813D17 /* CVSurfaceMesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVSurfaceMesh.cpp; sourceTree = "<group>"; };
+		D4A04BD2107E5BDA00813D17 /* CVSurfaceMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVSurfaceMesh.h; sourceTree = "<group>"; };
+		D4A04BD4107E5BDB00813D17 /* CVColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVColor.cpp; sourceTree = "<group>"; };
+		D4A04BD5107E5BDB00813D17 /* CVColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVColor.h; sourceTree = "<group>"; };
+		D4A04BD6107E5BDB00813D17 /* CVMaterial.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVMaterial.cpp; sourceTree = "<group>"; };
+		D4A04BD7107E5BDB00813D17 /* CVMaterial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMaterial.h; sourceTree = "<group>"; };
+		D4A04BD8107E5BDB00813D17 /* CVProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVProperties.h; sourceTree = "<group>"; };
+		D4A04BD9107E5BDB00813D17 /* CVTexture.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVTexture.cpp; sourceTree = "<group>"; };
+		D4A04BDA107E5BDC00813D17 /* CVTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVTexture.h; sourceTree = "<group>"; };
+		D4A04BDB107E5BDC00813D17 /* CVTransformer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVTransformer.cpp; sourceTree = "<group>"; };
+		D4A04BDC107E5BDC00813D17 /* CVTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVTransformer.h; sourceTree = "<group>"; };
+		D4A04BDE107E5BDC00813D17 /* CVShader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVShader.cpp; sourceTree = "<group>"; };
+		D4A04BDF107E5BDC00813D17 /* CVShader.graffle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CVShader.graffle; sourceTree = "<group>"; };
+		D4A04BE0107E5BDC00813D17 /* CVShader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVShader.h; sourceTree = "<group>"; };
+		D4A04BE1107E5BDC00813D17 /* CVShaderProgram.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVShaderProgram.cpp; sourceTree = "<group>"; };
+		D4A04BE2107E5BDD00813D17 /* CVShaderProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVShaderProgram.h; sourceTree = "<group>"; };
+		D4A04BE3107E5BDD00813D17 /* CVShaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVShaders.h; sourceTree = "<group>"; };
+		D4A04C12107E5C6000813D17 /* CVMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMath.h; sourceTree = "<group>"; };
+		D4A04C13107E5C6000813D17 /* CVMathDefines.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVMathDefines.cpp; sourceTree = "<group>"; };
+		D4A04C14107E5C6100813D17 /* CVMathDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMathDefines.h; sourceTree = "<group>"; };
+		D4A04C15107E5C6100813D17 /* CVMatrix.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVMatrix.cpp; sourceTree = "<group>"; };
+		D4A04C16107E5C6100813D17 /* CVMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMatrix.h; sourceTree = "<group>"; };
+		D4A04C17107E5C6100813D17 /* CVMatrix2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVMatrix2.cpp; sourceTree = "<group>"; };
+		D4A04C18107E5C6100813D17 /* CVMatrix2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMatrix2.h; sourceTree = "<group>"; };
+		D4A04C19107E5C6200813D17 /* CVMatrix3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVMatrix3.cpp; sourceTree = "<group>"; };
+		D4A04C1A107E5C6200813D17 /* CVMatrix3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMatrix3.h; sourceTree = "<group>"; };
+		D4A04C1B107E5C6200813D17 /* CVMatrix4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVMatrix4.cpp; sourceTree = "<group>"; };
+		D4A04C1C107E5C6200813D17 /* CVMatrix4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMatrix4.h; sourceTree = "<group>"; };
+		D4A04C1D107E5C6200813D17 /* CVVector.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVVector.cpp; sourceTree = "<group>"; };
+		D4A04C1E107E5C6300813D17 /* CVVector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVVector.h; sourceTree = "<group>"; };
+		D4A04C1F107E5C6300813D17 /* CVVector2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVVector2.cpp; sourceTree = "<group>"; };
+		D4A04C20107E5C6300813D17 /* CVVector2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVVector2.h; sourceTree = "<group>"; };
+		D4A04C21107E5C6300813D17 /* CVVector3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVVector3.cpp; sourceTree = "<group>"; };
+		D4A04C22107E5C6400813D17 /* CVVector3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVVector3.h; sourceTree = "<group>"; };
+		D4A04C23107E5C6400813D17 /* CVVector4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVVector4.cpp; sourceTree = "<group>"; };
+		D4A04C24107E5C6400813D17 /* CVVector4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVVector4.h; sourceTree = "<group>"; };
+		D4A2AB4210A132100010FA7C /* CVGraphicsControllerTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CVGraphicsControllerTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AF9A5A1062D69C00803716 /* CVRTTI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVRTTI.h; sourceTree = "<group>"; };
+		D4AF9A5B1062D69C00803716 /* CVRTTI.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVRTTI.cpp; sourceTree = "<group>"; };
+		D4AF9A5E1062D90B00803716 /* CVBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVBase.h; sourceTree = "<group>"; };
+		D4AF9A711062D9AB00803716 /* CVObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVObject.h; sourceTree = "<group>"; };
+		D4AF9A721062D9AB00803716 /* CVObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVObject.cpp; sourceTree = "<group>"; };
+		D4AF9A751062DF3000803716 /* CVString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVString.h; sourceTree = "<group>"; };
+		D4AF9A761062DF3000803716 /* CVString.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVString.cpp; sourceTree = "<group>"; };
+		D4AF9A881062F38000803716 /* CVDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVDefines.h; sourceTree = "<group>"; };
+		D4AF9AF8106300D800803716 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		D4AF9B3C1063039E00803716 /* CVStringTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CVStringTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AF9B46106303BB00803716 /* CVRTTITest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CVRTTITest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4AF9B4D106303D800803716 /* gtest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = gtest.framework; path = Library/Frameworks/gtest.framework; sourceTree = SDKROOT; };
+		D4AF9B721063042D00803716 /* CVStringTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVStringTest.cpp; sourceTree = "<group>"; };
+		D4AF9B741063043A00803716 /* CVRTTITest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVRTTITest.cpp; sourceTree = "<group>"; };
+		D4C3110510AB0DF500FAA473 /* CoreVision.zargo */ = {isa = PBXFileReference; lastKnownFileType = file; path = CoreVision.zargo; sourceTree = "<group>"; };
+		D4C9B91A106D6E1C0057EF1D /* CVSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVSingleton.h; sourceTree = "<group>"; };
+		D4C9B91E106D712C0057EF1D /* CVLockable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVLockable.h; sourceTree = "<group>"; };
+		D4C9B91F106D712C0057EF1D /* CVLockable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVLockable.cpp; sourceTree = "<group>"; };
+		D4C9B924106D73220057EF1D /* CVMutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVMutex.h; sourceTree = "<group>"; };
+		D4C9B925106D73220057EF1D /* CVMutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVMutex.cpp; sourceTree = "<group>"; };
+		D4C9B928106D73280057EF1D /* CVLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVLock.h; sourceTree = "<group>"; };
+		D4C9B950106D75FD0057EF1D /* CVGuard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVGuard.h; sourceTree = "<group>"; };
+		D4C9B951106D75FD0057EF1D /* CVGuard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVGuard.cpp; sourceTree = "<group>"; };
+		D4C9B95E106D7B280057EF1D /* CVApplication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVApplication.h; sourceTree = "<group>"; };
+		D4C9B95F106D7B280057EF1D /* CVApplication.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVApplication.cpp; sourceTree = "<group>"; };
+		D4EE11A4107AF50200348130 /* CVADTTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CVADTTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4EE11C0107BA27900348130 /* CVException.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVException.cpp; sourceTree = "<group>"; };
+		D4EE11C1107BA27900348130 /* CVException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVException.h; sourceTree = "<group>"; };
+		D4EE11C9107BA2C200348130 /* CVTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVTypes.h; sourceTree = "<group>"; };
+		D4F395121124A21700F01165 /* CVRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CVRuntime.h; sourceTree = "<group>"; };
+		D4F395131124A21700F01165 /* CVRuntime.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CVRuntime.cpp; sourceTree = "<group>"; };
+		D4F395631124B09300F01165 /* CoreVisionToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = CoreVisionToolbox.xcodeproj; path = CoreVisionToolbox/CoreVisionToolbox.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D2AAC09B05546B4700DB518D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AF9AF9106300D800803716 /* CoreFoundation.framework in Frameworks */,
+				D453218B109B8BCF003E73F9 /* OpenGL.framework in Frameworks */,
+				D4532197109B8D5E003E73F9 /* ApplicationServices.framework in Frameworks */,
+				D45321B2109B942A003E73F9 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44989D1109F928600A98A51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4FE6D0610D7EAF800FAFF56 /* gtest.framework in Frameworks */,
+				D44989DB109F92C100A98A51 /* OpenGL.framework in Frameworks */,
+				D44989DC109F92C700A98A51 /* libCoreVision.dylib in Frameworks */,
+				D49957EE1113966400725BD3 /* Accelerate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4498B71109F9F9400A98A51 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4498B79109F9FA100A98A51 /* libCoreVision.dylib in Frameworks */,
+				D4498B7A109F9FB000A98A51 /* OpenGL.framework in Frameworks */,
+				D4498B7C109F9FB800A98A51 /* ApplicationServices.framework in Frameworks */,
+				D4498B7E109F9FD700A98A51 /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A2AB4010A132100010FA7C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4359D0810A8B75800017BD0 /* ApplicationServices.framework in Frameworks */,
+				D4A2AB5810A1321B0010FA7C /* libCoreVision.dylib in Frameworks */,
+				D4A2AB5910A1322F0010FA7C /* OpenGL.framework in Frameworks */,
+				D4A2AB5A10A1323D0010FA7C /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4AF9B3A1063039E00803716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AF9B40106303A400803716 /* libCoreVision.dylib in Frameworks */,
+				D4AF9B4E106303D800803716 /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4AF9B44106303BB00803716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AF9B69106303EE00803716 /* gtest.framework in Frameworks */,
+				D4AF9B4C106303C300803716 /* libCoreVision.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EE11A2107AF50200348130 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EE11A8107AF50800348130 /* libCoreVision.dylib in Frameworks */,
+				D4EE11A9107AF51700348130 /* gtest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		034768DDFF38A45A11DB9C8B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC09D05546B4700DB518D /* libCoreVision.dylib */,
+				D4AF9B3C1063039E00803716 /* CVStringTest */,
+				D4AF9B46106303BB00803716 /* CVRTTITest */,
+				D4EE11A4107AF50200348130 /* CVADTTest */,
+				D44989D3109F928700A98A51 /* CVShaderTest */,
+				D4498B73109F9F9400A98A51 /* CVDisplayTest */,
+				D4A2AB4210A132100010FA7C /* CVGraphicsControllerTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0867D691FE84028FC02AAC07 /* CoreVision */ = {
+			isa = PBXGroup;
+			children = (
+				D4F395571124B05200F01165 /* Matlab */,
+				D4C3110410AB0DD900FAA473 /* UML */,
+				D40E01FC1086435900FCFF7B /* XML */,
+				5073E0CA09E734BC00EC74B6 /* Configuration Files */,
+				08FB77ACFE841707C02AAC07 /* Source */,
+				D4AF9B2C1063031E00803716 /* Test */,
+				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
+				034768DDFF38A45A11DB9C8B /* Products */,
+				D44989DA109F92C100A98A51 /* OpenGL.framework */,
+				D4498B7B109F9FB800A98A51 /* ApplicationServices.framework */,
+			);
+			name = CoreVision;
+			sourceTree = "<group>";
+		};
+		0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF9B4D106303D800803716 /* gtest.framework */,
+				D4AF9AF8106300D800803716 /* CoreFoundation.framework */,
+				D453218A109B8BCF003E73F9 /* OpenGL.framework */,
+				D4532196109B8D5E003E73F9 /* ApplicationServices.framework */,
+				D45321B1109B942A003E73F9 /* CoreVideo.framework */,
+				D49957ED1113966400725BD3 /* Accelerate.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		08FB77ACFE841707C02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				50149BD909E781A5002DEE6A /* CoreVision.h */,
+				D4AF9A441062D5B600803716 /* Base */,
+				D473D5FC107BA6F90026E137 /* Application */,
+				D473D61E107BA7910026E137 /* Document */,
+				D4AF9A421062D56600803716 /* ADT */,
+				D4AF9A461062D5C700803716 /* Math */,
+				D4AF9A451062D5BE00803716 /* Graphics */,
+				D4AF9A431062D5A800803716 /* Analysis */,
+				D4AF9A471062D5D200803716 /* Plugins */,
+			);
+			name = Source;
+			path = ../../Library/Source;
+			sourceTree = SOURCE_ROOT;
+		};
+		5073E0CA09E734BC00EC74B6 /* Configuration Files */ = {
+			isa = PBXGroup;
+			children = (
+				D419BAAC1067E23800742B9B /* doxygen.config */,
+				5073E0C609E734A800EC74B6 /* CoreVisionProj.xcconfig */,
+				5073E0C709E734A800EC74B6 /* CoreVisionTarget.xcconfig */,
+				D419BB121068207000742B9B /* Documentation.plist */,
+				D419BB491068287500742B9B /* Documentation.config */,
+			);
+			name = "Configuration Files";
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D40E01FC1086435900FCFF7B /* XML */ = {
+			isa = PBXGroup;
+			children = (
+				D40E01FD108643C600FCFF7B /* cvshaderprogram.dtd */,
+			);
+			name = XML;
+			path = ../../XML;
+			sourceTree = "<group>";
+		};
+		D473D5FC107BA6F90026E137 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D473D631107BA8270026E137 /* CVApp.h */,
+				D473D63C107BB10D0026E137 /* CVRunnable.h */,
+				D473D63B107BB10D0026E137 /* CVRunnable.cpp */,
+				D473D617107BA77E0026E137 /* CVThread.h */,
+				D473D616107BA77E0026E137 /* CVThread.cpp */,
+				D473D619107BA77E0026E137 /* CVThreadManager.h */,
+				D473D618107BA77E0026E137 /* CVThreadManager.cpp */,
+				D4C9B95E106D7B280057EF1D /* CVApplication.h */,
+				D4C9B95F106D7B280057EF1D /* CVApplication.cpp */,
+				D4A04B82107E56C100813D17 /* CVClock.h */,
+				D4A04B81107E56C100813D17 /* CVClock.cpp */,
+				D4F395121124A21700F01165 /* CVRuntime.h */,
+				D4F395131124A21700F01165 /* CVRuntime.cpp */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		D473D61E107BA7910026E137 /* Document */ = {
+			isa = PBXGroup;
+			children = (
+				D473D622107BA7BD0026E137 /* CVDocument.h */,
+				D473D621107BA7BD0026E137 /* CVDocument.cpp */,
+				D473D624107BA7BD0026E137 /* CVShaderDocument.h */,
+				D473D623107BA7BD0026E137 /* CVShaderDocument.cpp */,
+				D473D626107BA7BD0026E137 /* CVXMLDocument.h */,
+				D473D625107BA7BD0026E137 /* CVXMLDocument.cpp */,
+				D473D628107BA7BD0026E137 /* CVXMLObject.h */,
+				D473D627107BA7BD0026E137 /* CVXMLObject.cpp */,
+			);
+			path = Document;
+			sourceTree = "<group>";
+		};
+		D4A04BC7107E5BD900813D17 /* Primitives */ = {
+			isa = PBXGroup;
+			children = (
+				D4A04BCE107E5BDA00813D17 /* CVPrimitives.h */,
+				D4A04BCD107E5BD900813D17 /* CVPrimitive.h */,
+				D4A04BCC107E5BD900813D17 /* CVPrimitive.cpp */,
+				D4A04BC9107E5BD900813D17 /* CVGrid.h */,
+				D4A04BC8107E5BD900813D17 /* CVGrid.cpp */,
+				D4A04BCB107E5BD900813D17 /* CVPolygon.h */,
+				D4A04BCA107E5BD900813D17 /* CVPolygon.cpp */,
+				D4A04BD0107E5BDA00813D17 /* CVRegularPolygon.h */,
+				D4A04BCF107E5BDA00813D17 /* CVRegularPolygon.cpp */,
+				D4A04BD2107E5BDA00813D17 /* CVSurfaceMesh.h */,
+				D4A04BD1107E5BDA00813D17 /* CVSurfaceMesh.cpp */,
+			);
+			path = Primitives;
+			sourceTree = "<group>";
+		};
+		D4A04BD3107E5BDB00813D17 /* Properties */ = {
+			isa = PBXGroup;
+			children = (
+				D4A04BD8107E5BDB00813D17 /* CVProperties.h */,
+				D4A04BD5107E5BDB00813D17 /* CVColor.h */,
+				D4A04BD4107E5BDB00813D17 /* CVColor.cpp */,
+				D4A04BD7107E5BDB00813D17 /* CVMaterial.h */,
+				D4A04BD6107E5BDB00813D17 /* CVMaterial.cpp */,
+				D4A04BDA107E5BDC00813D17 /* CVTexture.h */,
+				D4A04BD9107E5BDB00813D17 /* CVTexture.cpp */,
+				D4A04BDC107E5BDC00813D17 /* CVTransformer.h */,
+				D4A04BDB107E5BDC00813D17 /* CVTransformer.cpp */,
+			);
+			path = Properties;
+			sourceTree = "<group>";
+		};
+		D4A04BDD107E5BDC00813D17 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				D4A04BE3107E5BDD00813D17 /* CVShaders.h */,
+				D4A04BDF107E5BDC00813D17 /* CVShader.graffle */,
+				D4A04BE0107E5BDC00813D17 /* CVShader.h */,
+				D4A04BDE107E5BDC00813D17 /* CVShader.cpp */,
+				D40E01E8108630C500FCFF7B /* CVFragmentShader.h */,
+				D40E01E9108630C500FCFF7B /* CVFragmentShader.cpp */,
+				D40E01EC108630CF00FCFF7B /* CVVertexShader.h */,
+				D40E01ED108630CF00FCFF7B /* CVVertexShader.cpp */,
+				D40E01F0108630DA00FCFF7B /* CVGeometryShader.h */,
+				D40E01F1108630DA00FCFF7B /* CVGeometryShader.cpp */,
+				D4A04BE2107E5BDD00813D17 /* CVShaderProgram.h */,
+				D4A04BE1107E5BDC00813D17 /* CVShaderProgram.cpp */,
+			);
+			path = Shaders;
+			sourceTree = "<group>";
+		};
+		D4AF9A421062D56600803716 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				D410D890107AF3A600428495 /* CVADT.h */,
+				D4A04ABC107CF62B00813D17 /* CVNode.h */,
+				D4A04ABB107CF62B00813D17 /* CVNode.cpp */,
+				D4A04ABA107CF62B00813D17 /* CVListNode.h */,
+				D4A04AB9107CF62B00813D17 /* CVListNode.cpp */,
+				D4A04AB8107CF62B00813D17 /* CVDeque.h */,
+				D4A04AB7107CF62B00813D17 /* CVDeque.cpp */,
+				D4A04ABE107CF62B00813D17 /* CVQueue.h */,
+				D4A04ABD107CF62B00813D17 /* CVQueue.cpp */,
+				D4A04AC0107CF62B00813D17 /* CVStack.h */,
+				D4A04ABF107CF62B00813D17 /* CVStack.cpp */,
+			);
+			path = ADT;
+			sourceTree = "<group>";
+		};
+		D4AF9A431062D5A800803716 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		D4AF9A441062D5B600803716 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D4AF9A5E1062D90B00803716 /* CVBase.h */,
+				D4AF9A881062F38000803716 /* CVDefines.h */,
+				D4EE11C9107BA2C200348130 /* CVTypes.h */,
+				D4C9B91A106D6E1C0057EF1D /* CVSingleton.h */,
+				D4AF9A5A1062D69C00803716 /* CVRTTI.h */,
+				D4AF9A5B1062D69C00803716 /* CVRTTI.cpp */,
+				D4AF9A711062D9AB00803716 /* CVObject.h */,
+				D4AF9A721062D9AB00803716 /* CVObject.cpp */,
+				D4AF9A751062DF3000803716 /* CVString.h */,
+				D4AF9A761062DF3000803716 /* CVString.cpp */,
+				D4C9B928106D73280057EF1D /* CVLock.h */,
+				D4C9B924106D73220057EF1D /* CVMutex.h */,
+				D4C9B925106D73220057EF1D /* CVMutex.cpp */,
+				D4C9B91E106D712C0057EF1D /* CVLockable.h */,
+				D4C9B91F106D712C0057EF1D /* CVLockable.cpp */,
+				D4C9B950106D75FD0057EF1D /* CVGuard.h */,
+				D4C9B951106D75FD0057EF1D /* CVGuard.cpp */,
+				D4EE11C1107BA27900348130 /* CVException.h */,
+				D4EE11C0107BA27900348130 /* CVException.cpp */,
+				D40E01BE10862AFF00FCFF7B /* CVNamed.h */,
+				D40E01BD10862AFF00FCFF7B /* CVNamed.cpp */,
+				D40E01C010862AFF00FCFF7B /* CVUnique.h */,
+				D40E01BF10862AFF00FCFF7B /* CVUnique.cpp */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D4AF9A451062D5BE00803716 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				D4A04BC0107E5BD700813D17 /* CVGraphics.h */,
+				D4A04BC3107E5BD800813D17 /* CVGraphicsDefines.h */,
+				D4A04BC6107E5BD800813D17 /* CVGraphicsIncludes.h */,
+				D4A04BB3107E5BD500813D17 /* CVCamera.h */,
+				D4A04BB2107E5BD500813D17 /* CVCamera.cpp */,
+				D4A04BB5107E5BD600813D17 /* CVDisplay.h */,
+				D4A04BB4107E5BD500813D17 /* CVDisplay.cpp */,
+				D4A04BB7107E5BD600813D17 /* CVDisplayContext.h */,
+				D4A04BB6107E5BD600813D17 /* CVDisplayContext.cpp */,
+				D4A04BB9107E5BD600813D17 /* CVDisplayController.h */,
+				D4A04BB8107E5BD600813D17 /* CVDisplayController.cpp */,
+				D4A04BBB107E5BD700813D17 /* CVDisplayMode.h */,
+				D4A04BBA107E5BD600813D17 /* CVDisplayMode.cpp */,
+				D4A04BBD107E5BD700813D17 /* CVDisplayThread.h */,
+				D4A04BBC107E5BD700813D17 /* CVDisplayThread.cpp */,
+				D4A04BBF107E5BD700813D17 /* CVGammaTable.h */,
+				D4A04BBE107E5BD700813D17 /* CVGammaTable.cpp */,
+				D4A04BC2107E5BD800813D17 /* CVGraphicsController.h */,
+				D4A04BC1107E5BD800813D17 /* CVGraphicsController.cpp */,
+				D4A04BC5107E5BD800813D17 /* CVGraphicsException.h */,
+				D4A04BC4107E5BD800813D17 /* CVGraphicsException.cpp */,
+				D4A04BC7107E5BD900813D17 /* Primitives */,
+				D4A04BD3107E5BDB00813D17 /* Properties */,
+				D4A04BDD107E5BDC00813D17 /* Shaders */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		D4AF9A461062D5C700803716 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				D4A04C12107E5C6000813D17 /* CVMath.h */,
+				D4A04C14107E5C6100813D17 /* CVMathDefines.h */,
+				D4A04C13107E5C6000813D17 /* CVMathDefines.cpp */,
+				D4A04C16107E5C6100813D17 /* CVMatrix.h */,
+				D4A04C15107E5C6100813D17 /* CVMatrix.cpp */,
+				D4A04C18107E5C6100813D17 /* CVMatrix2.h */,
+				D4A04C17107E5C6100813D17 /* CVMatrix2.cpp */,
+				D4A04C1A107E5C6200813D17 /* CVMatrix3.h */,
+				D4A04C19107E5C6200813D17 /* CVMatrix3.cpp */,
+				D4A04C1C107E5C6200813D17 /* CVMatrix4.h */,
+				D4A04C1B107E5C6200813D17 /* CVMatrix4.cpp */,
+				D4A04C1E107E5C6300813D17 /* CVVector.h */,
+				D4A04C1D107E5C6200813D17 /* CVVector.cpp */,
+				D4A04C20107E5C6300813D17 /* CVVector2.h */,
+				D4A04C1F107E5C6300813D17 /* CVVector2.cpp */,
+				D4A04C22107E5C6400813D17 /* CVVector3.h */,
+				D4A04C21107E5C6300813D17 /* CVVector3.cpp */,
+				D4A04C24107E5C6400813D17 /* CVVector4.h */,
+				D4A04C23107E5C6400813D17 /* CVVector4.cpp */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		D4AF9A471062D5D200803716 /* Plugins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Plugins;
+			sourceTree = "<group>";
+		};
+		D4AF9B2C1063031E00803716 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				D44989C1109F924D00A98A51 /* CVClockTest.cpp */,
+				D44989C2109F924D00A98A51 /* CVDisplayTest.cpp */,
+				D44989C3109F924D00A98A51 /* CVGraphicsControllerTest.cpp */,
+				D44989C4109F924D00A98A51 /* CVMathTest.cpp */,
+				D44989C5109F924D00A98A51 /* CVXMLTest.cpp */,
+				D44989BE109F923600A98A51 /* CVShaderTest.cpp */,
+				D410D88E107AF36500428495 /* CVADTTest.cpp */,
+				D4AF9B721063042D00803716 /* CVStringTest.cpp */,
+				D4AF9B741063043A00803716 /* CVRTTITest.cpp */,
+			);
+			name = Test;
+			path = ../../Library/Source/Test;
+			sourceTree = "<group>";
+		};
+		D4C3110410AB0DD900FAA473 /* UML */ = {
+			isa = PBXGroup;
+			children = (
+				D4C3110510AB0DF500FAA473 /* CoreVision.zargo */,
+			);
+			name = UML;
+			path = ../../UML;
+			sourceTree = "<group>";
+		};
+		D4F395571124B05200F01165 /* Matlab */ = {
+			isa = PBXGroup;
+			children = (
+				D4F395631124B09300F01165 /* CoreVisionToolbox.xcodeproj */,
+			);
+			name = Matlab;
+			path = ../../Matlab;
+			sourceTree = "<group>";
+		};
+		D4F395641124B09300F01165 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC09905546B4700DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50149BDA09E781A5002DEE6A /* CoreVision.h in Headers */,
+				D4AF9A5C1062D69C00803716 /* CVRTTI.h in Headers */,
+				D4AF9A601062D90B00803716 /* CVBase.h in Headers */,
+				D4AF9A731062D9AB00803716 /* CVObject.h in Headers */,
+				D4AF9A771062DF3000803716 /* CVString.h in Headers */,
+				D4AF9A8A1062F38000803716 /* CVDefines.h in Headers */,
+				D4C9B91C106D6E1C0057EF1D /* CVSingleton.h in Headers */,
+				D4C9B920106D712C0057EF1D /* CVLockable.h in Headers */,
+				D4C9B926106D73220057EF1D /* CVMutex.h in Headers */,
+				D4C9B92A106D73280057EF1D /* CVLock.h in Headers */,
+				D4C9B952106D75FD0057EF1D /* CVGuard.h in Headers */,
+				D4C9B960106D7B280057EF1D /* CVApplication.h in Headers */,
+				D410D891107AF3A600428495 /* CVADT.h in Headers */,
+				D4EE11C3107BA27900348130 /* CVException.h in Headers */,
+				D4EE11CA107BA2C200348130 /* CVTypes.h in Headers */,
+				D473D61B107BA77E0026E137 /* CVThread.h in Headers */,
+				D473D61D107BA77E0026E137 /* CVThreadManager.h in Headers */,
+				D473D62A107BA7BD0026E137 /* CVDocument.h in Headers */,
+				D473D62C107BA7BD0026E137 /* CVShaderDocument.h in Headers */,
+				D473D62E107BA7BD0026E137 /* CVXMLDocument.h in Headers */,
+				D473D630107BA7BD0026E137 /* CVXMLObject.h in Headers */,
+				D473D632107BA8270026E137 /* CVApp.h in Headers */,
+				D473D63E107BB10D0026E137 /* CVRunnable.h in Headers */,
+				D4A04AC2107CF62B00813D17 /* CVDeque.h in Headers */,
+				D4A04AC4107CF62B00813D17 /* CVListNode.h in Headers */,
+				D4A04AC6107CF62B00813D17 /* CVNode.h in Headers */,
+				D4A04AC8107CF62B00813D17 /* CVQueue.h in Headers */,
+				D4A04ACA107CF62B00813D17 /* CVStack.h in Headers */,
+				D4A04B84107E56C100813D17 /* CVClock.h in Headers */,
+				D4A04BE5107E5BDD00813D17 /* CVCamera.h in Headers */,
+				D4A04BE7107E5BDD00813D17 /* CVDisplay.h in Headers */,
+				D4A04BE9107E5BDD00813D17 /* CVDisplayContext.h in Headers */,
+				D4A04BEB107E5BDD00813D17 /* CVDisplayController.h in Headers */,
+				D4A04BED107E5BDD00813D17 /* CVDisplayMode.h in Headers */,
+				D4A04BEF107E5BDD00813D17 /* CVDisplayThread.h in Headers */,
+				D4A04BF1107E5BDD00813D17 /* CVGammaTable.h in Headers */,
+				D4A04BF2107E5BDD00813D17 /* CVGraphics.h in Headers */,
+				D4A04BF4107E5BDD00813D17 /* CVGraphicsController.h in Headers */,
+				D4A04BF5107E5BDD00813D17 /* CVGraphicsDefines.h in Headers */,
+				D4A04BF7107E5BDD00813D17 /* CVGraphicsException.h in Headers */,
+				D4A04BF8107E5BDD00813D17 /* CVGraphicsIncludes.h in Headers */,
+				D4A04BFA107E5BDD00813D17 /* CVGrid.h in Headers */,
+				D4A04BFC107E5BDD00813D17 /* CVPolygon.h in Headers */,
+				D4A04BFE107E5BDD00813D17 /* CVPrimitive.h in Headers */,
+				D4A04BFF107E5BDD00813D17 /* CVPrimitives.h in Headers */,
+				D4A04C01107E5BDD00813D17 /* CVRegularPolygon.h in Headers */,
+				D4A04C03107E5BDD00813D17 /* CVSurfaceMesh.h in Headers */,
+				D4A04C05107E5BDD00813D17 /* CVColor.h in Headers */,
+				D4A04C07107E5BDD00813D17 /* CVMaterial.h in Headers */,
+				D4A04C08107E5BDD00813D17 /* CVProperties.h in Headers */,
+				D4A04C0A107E5BDD00813D17 /* CVTexture.h in Headers */,
+				D4A04C0C107E5BDD00813D17 /* CVTransformer.h in Headers */,
+				D4A04C0E107E5BDD00813D17 /* CVShader.h in Headers */,
+				D4A04C10107E5BDD00813D17 /* CVShaderProgram.h in Headers */,
+				D4A04C11107E5BDD00813D17 /* CVShaders.h in Headers */,
+				D4A04C25107E5C6400813D17 /* CVMath.h in Headers */,
+				D4A04C27107E5C6400813D17 /* CVMathDefines.h in Headers */,
+				D4A04C29107E5C6400813D17 /* CVMatrix.h in Headers */,
+				D4A04C2B107E5C6400813D17 /* CVMatrix2.h in Headers */,
+				D4A04C2D107E5C6400813D17 /* CVMatrix3.h in Headers */,
+				D4A04C2F107E5C6400813D17 /* CVMatrix4.h in Headers */,
+				D4A04C31107E5C6400813D17 /* CVVector.h in Headers */,
+				D4A04C33107E5C6400813D17 /* CVVector2.h in Headers */,
+				D4A04C35107E5C6400813D17 /* CVVector3.h in Headers */,
+				D4A04C37107E5C6400813D17 /* CVVector4.h in Headers */,
+				D40E01C210862AFF00FCFF7B /* CVNamed.h in Headers */,
+				D40E01C410862AFF00FCFF7B /* CVUnique.h in Headers */,
+				D40E01EA108630C500FCFF7B /* CVFragmentShader.h in Headers */,
+				D40E01EE108630CF00FCFF7B /* CVVertexShader.h in Headers */,
+				D40E01F2108630DA00FCFF7B /* CVGeometryShader.h in Headers */,
+				D4F395141124A21700F01165 /* CVRuntime.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC09C05546B4700DB518D /* CoreVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB916008733D950010E9CD /* Build configuration list for PBXNativeTarget "CoreVision" */;
+			buildPhases = (
+				D2AAC09905546B4700DB518D /* Headers */,
+				D2AAC09B05546B4700DB518D /* Frameworks */,
+				D2AAC09A05546B4700DB518D /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoreVision;
+			productName = libCoreVision;
+			productReference = D2AAC09D05546B4700DB518D /* libCoreVision.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		D44989D2109F928600A98A51 /* CVShaderTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D44989D9109F92B200A98A51 /* Build configuration list for PBXNativeTarget "CVShaderTest" */;
+			buildPhases = (
+				D44989D0109F928600A98A51 /* Sources */,
+				D44989D1109F928600A98A51 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D44989D8109F929200A98A51 /* PBXTargetDependency */,
+			);
+			name = CVShaderTest;
+			productName = CVShaderTest;
+			productReference = D44989D3109F928700A98A51 /* CVShaderTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		D4498B72109F9F9400A98A51 /* CVDisplayTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4498B7D109F9FB900A98A51 /* Build configuration list for PBXNativeTarget "CVDisplayTest" */;
+			buildPhases = (
+				D4498B70109F9F9400A98A51 /* Sources */,
+				D4498B71109F9F9400A98A51 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4498B78109F9F9C00A98A51 /* PBXTargetDependency */,
+			);
+			name = CVDisplayTest;
+			productName = CVDisplayTest;
+			productReference = D4498B73109F9F9400A98A51 /* CVDisplayTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		D4A2AB4110A132100010FA7C /* CVGraphicsControllerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4A2AB6410A1327F0010FA7C /* Build configuration list for PBXNativeTarget "CVGraphicsControllerTest" */;
+			buildPhases = (
+				D4A2AB3F10A132100010FA7C /* Sources */,
+				D4A2AB4010A132100010FA7C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4A2AB5710A132150010FA7C /* PBXTargetDependency */,
+			);
+			name = CVGraphicsControllerTest;
+			productName = CVGraphicsControllerTest;
+			productReference = D4A2AB4210A132100010FA7C /* CVGraphicsControllerTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		D4AF9B3B1063039E00803716 /* CVStringTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4AF9B51106303D800803716 /* Build configuration list for PBXNativeTarget "CVStringTest" */;
+			buildPhases = (
+				D4AF9B391063039E00803716 /* Sources */,
+				D4AF9B3A1063039E00803716 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4AF9B42106303A800803716 /* PBXTargetDependency */,
+			);
+			name = CVStringTest;
+			productName = CVStringTest;
+			productReference = D4AF9B3C1063039E00803716 /* CVStringTest */;
+			productType = "com.apple.product-type.tool";
+		};
+		D4AF9B45106303BB00803716 /* CVRTTITest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4AF9B52106303D800803716 /* Build configuration list for PBXNativeTarget "CVRTTITest" */;
+			buildPhases = (
+				D4AF9B43106303BB00803716 /* Sources */,
+				D4AF9B44106303BB00803716 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4AF9B4B106303C000803716 /* PBXTargetDependency */,
+			);
+			name = CVRTTITest;
+			productName = CVRTTITest;
+			productReference = D4AF9B46106303BB00803716 /* CVRTTITest */;
+			productType = "com.apple.product-type.tool";
+		};
+		D4EE11A3107AF50200348130 /* CVADTTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4EE11B2107AF54D00348130 /* Build configuration list for PBXNativeTarget "CVADTTest" */;
+			buildPhases = (
+				D4EE11A1107AF50200348130 /* Sources */,
+				D4EE11A2107AF50200348130 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4EE11AB107AF51C00348130 /* PBXTargetDependency */,
+			);
+			name = CVADTTest;
+			productName = CVADTTest;
+			productReference = D4EE11A4107AF50200348130 /* CVADTTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0867D690FE84028FC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB916408733D950010E9CD /* Build configuration list for PBXProject "CoreVision" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 0867D691FE84028FC02AAC07 /* CoreVision */;
+			productRefGroup = 034768DDFF38A45A11DB9C8B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D4F395641124B09300F01165 /* Products */;
+					ProjectRef = D4F395631124B09300F01165 /* CoreVisionToolbox.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				D2AAC09C05546B4700DB518D /* CoreVision */,
+				D4AF9B2D1063033A00803716 /* All */,
+				D4AF9B321063035800803716 /* Tests */,
+				D4AF9B3B1063039E00803716 /* CVStringTest */,
+				D4AF9B45106303BB00803716 /* CVRTTITest */,
+				D4EE11A3107AF50200348130 /* CVADTTest */,
+				D419BB161068221200742B9B /* Documentation */,
+				D44989D2109F928600A98A51 /* CVShaderTest */,
+				D4498B72109F9F9400A98A51 /* CVDisplayTest */,
+				D4A2AB4110A132100010FA7C /* CVGraphicsControllerTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D419BB151068221200742B9B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "CONFIG_PATH=$SOURCE_ROOT/Config\nHEADER_PATH=$SOURCE_ROOT/../../Library\nBUILD_PATH=$BUILT_PRODUCTS_DIR/Documentation/\n\nmkdir -p $BUILD_PATH\n\nheaderdoc2html -u -c $CONFIG_PATH/Documentation.config -o $BUILD_PATH $HEADER_PATH\ngatherheaderdoc $BUILD_PATH\nexit 0\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC09A05546B4700DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AF9A5D1062D69C00803716 /* CVRTTI.cpp in Sources */,
+				D4AF9A741062D9AB00803716 /* CVObject.cpp in Sources */,
+				D4AF9A781062DF3000803716 /* CVString.cpp in Sources */,
+				D4C9B921106D712C0057EF1D /* CVLockable.cpp in Sources */,
+				D4C9B927106D73220057EF1D /* CVMutex.cpp in Sources */,
+				D4C9B953106D75FD0057EF1D /* CVGuard.cpp in Sources */,
+				D4C9B961106D7B280057EF1D /* CVApplication.cpp in Sources */,
+				D4EE11C2107BA27900348130 /* CVException.cpp in Sources */,
+				D473D61A107BA77E0026E137 /* CVThread.cpp in Sources */,
+				D473D61C107BA77E0026E137 /* CVThreadManager.cpp in Sources */,
+				D473D629107BA7BD0026E137 /* CVDocument.cpp in Sources */,
+				D473D62D107BA7BD0026E137 /* CVXMLDocument.cpp in Sources */,
+				D473D62F107BA7BD0026E137 /* CVXMLObject.cpp in Sources */,
+				D473D63D107BB10D0026E137 /* CVRunnable.cpp in Sources */,
+				D4A04AC1107CF62B00813D17 /* CVDeque.cpp in Sources */,
+				D4A04AC3107CF62B00813D17 /* CVListNode.cpp in Sources */,
+				D4A04AC5107CF62B00813D17 /* CVNode.cpp in Sources */,
+				D4A04AC7107CF62B00813D17 /* CVQueue.cpp in Sources */,
+				D4A04AC9107CF62B00813D17 /* CVStack.cpp in Sources */,
+				D4A04B83107E56C100813D17 /* CVClock.cpp in Sources */,
+				D4A04BE4107E5BDD00813D17 /* CVCamera.cpp in Sources */,
+				D4A04BE6107E5BDD00813D17 /* CVDisplay.cpp in Sources */,
+				D4A04BE8107E5BDD00813D17 /* CVDisplayContext.cpp in Sources */,
+				D4A04BEA107E5BDD00813D17 /* CVDisplayController.cpp in Sources */,
+				D4A04BEC107E5BDD00813D17 /* CVDisplayMode.cpp in Sources */,
+				D4A04BEE107E5BDD00813D17 /* CVDisplayThread.cpp in Sources */,
+				D4A04BF0107E5BDD00813D17 /* CVGammaTable.cpp in Sources */,
+				D4A04BF3107E5BDD00813D17 /* CVGraphicsController.cpp in Sources */,
+				D4A04BF6107E5BDD00813D17 /* CVGraphicsException.cpp in Sources */,
+				D4A04BF9107E5BDD00813D17 /* CVGrid.cpp in Sources */,
+				D4A04BFB107E5BDD00813D17 /* CVPolygon.cpp in Sources */,
+				D4A04BFD107E5BDD00813D17 /* CVPrimitive.cpp in Sources */,
+				D4A04C00107E5BDD00813D17 /* CVRegularPolygon.cpp in Sources */,
+				D4A04C02107E5BDD00813D17 /* CVSurfaceMesh.cpp in Sources */,
+				D4A04C04107E5BDD00813D17 /* CVColor.cpp in Sources */,
+				D4A04C06107E5BDD00813D17 /* CVMaterial.cpp in Sources */,
+				D4A04C09107E5BDD00813D17 /* CVTexture.cpp in Sources */,
+				D4A04C0B107E5BDD00813D17 /* CVTransformer.cpp in Sources */,
+				D4A04C0D107E5BDD00813D17 /* CVShader.cpp in Sources */,
+				D4A04C0F107E5BDD00813D17 /* CVShaderProgram.cpp in Sources */,
+				D4A04C26107E5C6400813D17 /* CVMathDefines.cpp in Sources */,
+				D4A04C28107E5C6400813D17 /* CVMatrix.cpp in Sources */,
+				D4A04C2A107E5C6400813D17 /* CVMatrix2.cpp in Sources */,
+				D4A04C2C107E5C6400813D17 /* CVMatrix3.cpp in Sources */,
+				D4A04C2E107E5C6400813D17 /* CVMatrix4.cpp in Sources */,
+				D4A04C30107E5C6400813D17 /* CVVector.cpp in Sources */,
+				D4A04C32107E5C6400813D17 /* CVVector2.cpp in Sources */,
+				D4A04C34107E5C6400813D17 /* CVVector3.cpp in Sources */,
+				D4A04C36107E5C6400813D17 /* CVVector4.cpp in Sources */,
+				D40E01C110862AFF00FCFF7B /* CVNamed.cpp in Sources */,
+				D40E01C310862AFF00FCFF7B /* CVUnique.cpp in Sources */,
+				D40E01EB108630C500FCFF7B /* CVFragmentShader.cpp in Sources */,
+				D40E01EF108630CF00FCFF7B /* CVVertexShader.cpp in Sources */,
+				D40E01F3108630DA00FCFF7B /* CVGeometryShader.cpp in Sources */,
+				D4F395151124A21700F01165 /* CVRuntime.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D44989D0109F928600A98A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D44989E8109F931900A98A51 /* CVShaderTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4498B70109F9F9400A98A51 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4498B82109F9FE500A98A51 /* CVDisplayTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4A2AB3F10A132100010FA7C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4A2AB5F10A132610010FA7C /* CVGraphicsControllerTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4AF9B391063039E00803716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AF9B731063042D00803716 /* CVStringTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4AF9B43106303BB00803716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4AF9B751063043A00803716 /* CVRTTITest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4EE11A1107AF50200348130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4EE11D3107BA33E00348130 /* CVADTTest.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D44989D8109F929200A98A51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC09C05546B4700DB518D /* CoreVision */;
+			targetProxy = D44989D7109F929200A98A51 /* PBXContainerItemProxy */;
+		};
+		D44989E0109F92DC00A98A51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D44989D2109F928600A98A51 /* CVShaderTest */;
+			targetProxy = D44989DF109F92DC00A98A51 /* PBXContainerItemProxy */;
+		};
+		D4498B78109F9F9C00A98A51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC09C05546B4700DB518D /* CoreVision */;
+			targetProxy = D4498B77109F9F9C00A98A51 /* PBXContainerItemProxy */;
+		};
+		D4498B90109FA02E00A98A51 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4498B72109F9F9400A98A51 /* CVDisplayTest */;
+			targetProxy = D4498B8F109FA02E00A98A51 /* PBXContainerItemProxy */;
+		};
+		D4A2AB5710A132150010FA7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC09C05546B4700DB518D /* CoreVision */;
+			targetProxy = D4A2AB5610A132150010FA7C /* PBXContainerItemProxy */;
+		};
+		D4A2AB5C10A132460010FA7C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4A2AB4110A132100010FA7C /* CVGraphicsControllerTest */;
+			targetProxy = D4A2AB5B10A132460010FA7C /* PBXContainerItemProxy */;
+		};
+		D4AF9B42106303A800803716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC09C05546B4700DB518D /* CoreVision */;
+			targetProxy = D4AF9B41106303A800803716 /* PBXContainerItemProxy */;
+		};
+		D4AF9B4B106303C000803716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC09C05546B4700DB518D /* CoreVision */;
+			targetProxy = D4AF9B4A106303C000803716 /* PBXContainerItemProxy */;
+		};
+		D4AF9B6B106303FD00803716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4AF9B45106303BB00803716 /* CVRTTITest */;
+			targetProxy = D4AF9B6A106303FD00803716 /* PBXContainerItemProxy */;
+		};
+		D4AF9B6D106303FD00803716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4AF9B3B1063039E00803716 /* CVStringTest */;
+			targetProxy = D4AF9B6C106303FD00803716 /* PBXContainerItemProxy */;
+		};
+		D4AF9B6F1063040800803716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4AF9B321063035800803716 /* Tests */;
+			targetProxy = D4AF9B6E1063040800803716 /* PBXContainerItemProxy */;
+		};
+		D4AF9B711063041300803716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC09C05546B4700DB518D /* CoreVision */;
+			targetProxy = D4AF9B701063041300803716 /* PBXContainerItemProxy */;
+		};
+		D4EE11AB107AF51C00348130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D2AAC09C05546B4700DB518D /* CoreVision */;
+			targetProxy = D4EE11AA107AF51C00348130 /* PBXContainerItemProxy */;
+		};
+		D4EE11AD107AF52200348130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4EE11A3107AF50200348130 /* CVADTTest */;
+			targetProxy = D4EE11AC107AF52200348130 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB916108733D950010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5073E0C709E734A800EC74B6 /* CoreVisionTarget.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CoreVision_Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"_GLIBCXX_DEBUG=1",
+					"_GLIBCXX_DEBUG_PEDANTIC=1",
+				);
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+			};
+			name = Debug;
+		};
+		1DEB916208733D950010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5073E0C709E734A800EC74B6 /* CoreVisionTarget.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DOXYGEN_PATH = /Applications/Doxygen.app/Contents/Resources/doxygen;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
+				);
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = CoreVision_Prefix.pch;
+				GCC_WARN_UNUSED_LABEL = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
+				GCC_WARN_UNUSED_VALUE = YES;
+				STRIP_INSTALLED_PRODUCT = YES;
+				STRIP_STYLE = "non-global";
+			};
+			name = Release;
+		};
+		1DEB916508733D950010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5073E0C609E734A800EC74B6 /* CoreVisionProj.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "Don't Code Sign";
+				COPY_PHASE_STRIP = NO;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_MODEL_PPC64 = NO;
+				"GCC_MODEL_PPC64[arch=ppc64]" = YES;
+				"GCC_MODEL_PPC64[arch=x86_64]" = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_STRICT_ALIASING = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_GLOBAL_CONSTRUCTORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PROTOTYPE_CONVERSION = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_PROFILING_CODE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				STRIP_INSTALLED_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		1DEB916608733D950010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5073E0C609E734A800EC74B6 /* CoreVisionProj.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "Rob Dotson";
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ALTIVEC_EXTENSIONS = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_CHECK_RETURN_VALUE_OF_OPERATOR_NEW = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DEBUGGING_SYMBOLS = full;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SSE41_EXTENSIONS = YES;
+				GCC_ENABLE_SSE42_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_MODEL_PPC64 = NO;
+				"GCC_MODEL_PPC64[arch=ppc64]" = YES;
+				"GCC_MODEL_PPC64[arch=x86_64]" = YES;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_STRICT_ALIASING = YES;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_GLOBAL_CONSTRUCTORS = YES;
+				GCC_WARN_ABOUT_MISSING_FIELD_INITIALIZERS = YES;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_CHECK_SWITCH_STATEMENTS = YES;
+				GCC_WARN_EFFECTIVE_CPLUSPLUS_VIOLATIONS = YES;
+				GCC_WARN_FOUR_CHARACTER_CONSTANTS = YES;
+				GCC_WARN_HIDDEN_VIRTUAL_FUNCTIONS = YES;
+				GCC_WARN_INITIALIZER_NOT_FULLY_BRACKETED = YES;
+				GCC_WARN_MISSING_PARENTHESES = YES;
+				GCC_WARN_MULTIPLE_DEFINITION_TYPES_FOR_SELECTOR = YES;
+				GCC_WARN_NON_VIRTUAL_DESTRUCTOR = YES;
+				GCC_WARN_PROTOTYPE_CONVERSION = YES;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_STRICT_SELECTOR_MATCH = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.5;
+				PREBINDING = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+		D419BB171068221300742B9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Docset;
+			};
+			name = Debug;
+		};
+		D419BB181068221300742B9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Docset;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D44989D5109F928700A98A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVShaderTest;
+			};
+			name = Debug;
+		};
+		D44989D6109F928700A98A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVShaderTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D4498B75109F9F9500A98A51 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVDisplayTest;
+			};
+			name = Debug;
+		};
+		D4498B76109F9F9500A98A51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVDisplayTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D4A2AB5410A132110010FA7C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVGraphicsControllerTest;
+			};
+			name = Debug;
+		};
+		D4A2AB5510A132110010FA7C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/Frameworks/ApplicationServices.framework/Frameworks\"",
+				);
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVGraphicsControllerTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D4AF9B2E1063033B00803716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = All;
+			};
+			name = Debug;
+		};
+		D4AF9B2F1063033B00803716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = All;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D4AF9B331063035800803716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Test;
+			};
+			name = Debug;
+		};
+		D4AF9B341063035800803716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Test;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D4AF9B3E1063039F00803716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVStringTest;
+			};
+			name = Debug;
+		};
+		D4AF9B3F1063039F00803716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVStringTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D4AF9B48106303BC00803716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVRTTITest;
+			};
+			name = Debug;
+		};
+		D4AF9B49106303BC00803716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVRTTITest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		D4EE11A6107AF50200348130 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVADTTest;
+			};
+			name = Debug;
+		};
+		D4EE11A7107AF50200348130 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/bin;
+				PREBINDING = NO;
+				PRODUCT_NAME = CVADTTest;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB916008733D950010E9CD /* Build configuration list for PBXNativeTarget "CoreVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB916108733D950010E9CD /* Debug */,
+				1DEB916208733D950010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB916408733D950010E9CD /* Build configuration list for PBXProject "CoreVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB916508733D950010E9CD /* Debug */,
+				1DEB916608733D950010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D419BB191068223100742B9B /* Build configuration list for PBXAggregateTarget "Documentation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D419BB171068221300742B9B /* Debug */,
+				D419BB181068221300742B9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D44989D9109F92B200A98A51 /* Build configuration list for PBXNativeTarget "CVShaderTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D44989D5109F928700A98A51 /* Debug */,
+				D44989D6109F928700A98A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4498B7D109F9FB900A98A51 /* Build configuration list for PBXNativeTarget "CVDisplayTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4498B75109F9F9500A98A51 /* Debug */,
+				D4498B76109F9F9500A98A51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4A2AB6410A1327F0010FA7C /* Build configuration list for PBXNativeTarget "CVGraphicsControllerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4A2AB5410A132110010FA7C /* Debug */,
+				D4A2AB5510A132110010FA7C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4AF9B371063037C00803716 /* Build configuration list for PBXAggregateTarget "All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AF9B2E1063033B00803716 /* Debug */,
+				D4AF9B2F1063033B00803716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4AF9B381063037C00803716 /* Build configuration list for PBXAggregateTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AF9B331063035800803716 /* Debug */,
+				D4AF9B341063035800803716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4AF9B51106303D800803716 /* Build configuration list for PBXNativeTarget "CVStringTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AF9B3E1063039F00803716 /* Debug */,
+				D4AF9B3F1063039F00803716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4AF9B52106303D800803716 /* Build configuration list for PBXNativeTarget "CVRTTITest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4AF9B48106303BC00803716 /* Debug */,
+				D4AF9B49106303BC00803716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4EE11B2107AF54D00348130 /* Build configuration list for PBXNativeTarget "CVADTTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4EE11A6107AF50200348130 /* Debug */,
+				D4EE11A7107AF50200348130 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0867D690FE84028FC02AAC07 /* Project object */;
+}

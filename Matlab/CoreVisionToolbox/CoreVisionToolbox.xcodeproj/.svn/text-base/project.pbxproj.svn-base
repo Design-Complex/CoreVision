@@ -1,0 +1,106 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 42;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		D4F395461124A71B00F01165 /* Make All */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = D4F395491124A75900F01165 /* Build configuration list for PBXAggregateTarget "Make All" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = "Make All";
+			productName = "Make All";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXGroup section */
+		D4F3953B1124A70300F01165 = {
+			isa = PBXGroup;
+			children = (
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		D4F3953D1124A70300F01165 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = D4F395401124A70300F01165 /* Build configuration list for PBXProject "CoreVisionToolbox" */;
+			compatibilityVersion = "Xcode 2.4";
+			hasScannedForEncodings = 0;
+			mainGroup = D4F3953B1124A70300F01165;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4F395461124A71B00F01165 /* Make All */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		D4F3953E1124A70300F01165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		D4F3953F1124A70300F01165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+			};
+			name = Release;
+		};
+		D4F395471124A71B00F01165 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Make All";
+			};
+			name = Debug;
+		};
+		D4F395481124A71B00F01165 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Make All";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4F395401124A70300F01165 /* Build configuration list for PBXProject "CoreVisionToolbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F3953E1124A70300F01165 /* Debug */,
+				D4F3953F1124A70300F01165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4F395491124A75900F01165 /* Build configuration list for PBXAggregateTarget "Make All" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4F395471124A71B00F01165 /* Debug */,
+				D4F395481124A71B00F01165 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4F3953D1124A70300F01165 /* Project object */;
+}
